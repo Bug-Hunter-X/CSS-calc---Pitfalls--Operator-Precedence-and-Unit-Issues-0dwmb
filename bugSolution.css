@@ -1,0 +1,13 @@
+/* bug.css */
+div {
+  width: calc(100% - 10); /* Incorrect: Unit mismatch */
+}
+
+/* bugSolution.css */
+div {
+  width: calc(100% - 10px); /* Correct: Consistent units */
+}
+
+div.another {
+  height: calc((100px + 20px) / 2); /* Correct use of parentheses for precedence */
+}

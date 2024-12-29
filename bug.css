@@ -1,0 +1,1 @@
+The CSS property `calc()` can sometimes produce unexpected results if you don't carefully consider operator precedence and unit compatibility.  For example, using `calc(100% - 10px)` is fine, but `calc(100% - 10)` might cause issues because the browser may not know how to subtract a unitless number from a percentage.
